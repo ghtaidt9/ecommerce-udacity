@@ -84,12 +84,7 @@
 <!--			<version>0.1.5</version>-->
 <!--		</dependency>-->
 		<!-- Splunk -->
-		<dependency>
-		    <groupId>com.splunk.logging</groupId>
-		    <artifactId>splunk-library-javalogging</artifactId>
-		    <version>1.7.2</version>
-		    <scope>runtime</scope>
-		</dependency>
+
 
 		<dependency>
 			<groupId>com.h2database</groupId>
