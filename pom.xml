@@ -87,8 +87,8 @@
 		<dependency>
 			<groupId>com.splunk.logging</groupId>
 			<artifactId>splunk-library-javalogging</artifactId>
-			<version>1.6.2</version>
-    			<scope>runtime</scope>
+			<version>1.9.0</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -118,11 +118,11 @@
 	</build>
 
 	<repositories>
-		<<repository>
-	            <id>splunk-artifactory</id>
-	            <name>Splunk Releases</name>
-	            <url>https://splunk.jfrog.io/splunk/ext-releases-local</url>
-	        </repository>
+		<repository>
+			<id>splunk-artifactory</id>
+			<name>Splunk Releases</name>
+			<url>https://splunk.artifactoryonline.com/artifactory/ext-releases-local</url>
+		</repository>
 	</repositories>
 
 </project>
