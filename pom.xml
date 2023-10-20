@@ -117,12 +117,6 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>splunk-artifactory</id>
-			<name>Splunk Releases</name>
-			<url>https://splunk.artifactoryonline.com/artifactory/ext-releases-local</url>
-		</repository>
-	</repositories>
+
 
 </project>
