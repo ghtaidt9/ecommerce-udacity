@@ -85,10 +85,10 @@
 <!--		</dependency>-->
 		<!-- Splunk -->
 		<dependency>
-			<groupId>com.splunk.logging</groupId>
-			<artifactId>splunk-library-javalogging</artifactId>
-			<version>1.7.2</version>
-			<scope>runtime</scope>
+		    <groupId>com.splunk.logging</groupId>
+		    <artifactId>splunk-library-javalogging</artifactId>
+		    <version>1.8.0</version>
+		    <scope>runtime</scope>
 		</dependency>
 
 		<dependency>
