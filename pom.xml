@@ -27,6 +27,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -59,25 +65,30 @@
         </dependency>
 		<!-- Logging -->
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.25</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback.contrib</groupId>
-			<artifactId>logback-jackson</artifactId>
-			<version>0.1.5</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback.contrib</groupId>
-			<artifactId>logback-json-classic</artifactId>
-			<version>0.1.5</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.slf4j</groupId>-->
+<!--			<artifactId>slf4j-api</artifactId>-->
+<!--			<version>1.7.25</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>ch.qos.logback.contrib</groupId>-->
+<!--			<artifactId>logback-jackson</artifactId>-->
+<!--			<version>0.1.5</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>ch.qos.logback.contrib</groupId>-->
+<!--			<artifactId>logback-json-classic</artifactId>-->
+<!--			<version>0.1.5</version>-->
+<!--		</dependency>-->
 		<!-- Splunk -->
 		<dependency>
 			<groupId>com.splunk.logging</groupId>
 			<artifactId>splunk-library-javalogging</artifactId>
 			<version>1.7.1</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -103,11 +114,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-surefire-plugin</artifactId>
-			  <version>2.19.1</version>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -115,7 +121,7 @@
 		<repository>
 			<id>splunk-artifactory</id>
 			<name>Splunk Releases</name>
-			<url>https://splunk.jfrog.io/splunk/ext-releases-local</url> 
+			<url>https://splunk.artifactoryonline.com/artifactory/ext-releases-local</url>
 		</repository>
 	</repositories>
 
